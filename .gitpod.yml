@@ -4,6 +4,11 @@ image:
 tasks:
   - name: Set Kubeconfig
     command: echo $K8S_CTX | base64 -d > ~/.kube/config
+  - name: Ask for OS_PASSWORD
+    command: >
+      echo "Please enter your OpenStack Password: " &&
+      read -sr OS_PASSWORD_INPUT &&
+      export OS_PASSWORD=$OS_PASSWORD_INPUT
 
 vscode:
   extensions:

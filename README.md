@@ -13,7 +13,33 @@ To open the workspace, simply click on the *Open in Gitpod* button, or use [this
 
 ## Configuring Openstack
 
+To configure openstack, you need to setup Openstack authentication variables. There are two ways to do it:
 
+- Copying the content of your `&lt;<user_name>-openrc.sh` file into a `openrc.sh` file in your workspace and source it: 
+
+    ```bash
+    source ./openrc.sh
+    ```
+
+- Using GitPod variables to define the following environment variables:
+
+    ```bash
+    # Keystone v2.0
+    OS_AUTH_URL=<AUTH_URL /v2.0>
+    OS_USERNAME=<USERNAME>
+    OS_REGION_NAME=<REGION>
+
+    # Keystone v3
+    OS_AUTH_URL=<AUTH_URL /v3>
+    OS_USERNAME=<USERNAME>
+    OS_PROJECT_ID=<PROJECT_ID>
+    OS_PROJECT_NAME=<PROJECT_NAME>
+    OS_REGION_NAME=<REGION_NAME>
+    OS_DOMAIN_NAME=<DOMAIN_NAME OR OS_USER_DOMAIN_NAME>
+    ```
+
+    Never add OS_PASSWORD as a Gitpod variable, the workspace will ask you for it after booting up.
+     
 
 ## Configuring Kubeconfig
 
