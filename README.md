@@ -6,9 +6,9 @@ A working Gitpod setup for managing Kubernetes clusters. The workspace includes:
 
 - For Kubernertes: Kubectl, Helm & Kustomize.
 
-To open the workspace, simply click on the *Open in Gitpod* button, or use [this link](https://gitpod.io/#k8s-and-openstack-gitpod).
+To open the workspace, simply click on the *Open in Gitpod* button, or use [this link](https://gitpod.io/#https://github.com/LostInBrittany/k8s-and-openstack-gitpod.git).
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#k8s-and-openstack-gitpod)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/LostInBrittany/k8s-and-openstack-gitpod.git)
 
 ## Configuring Kubeconfig
 
