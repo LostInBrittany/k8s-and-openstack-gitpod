@@ -20,6 +20,13 @@ RUN curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/s
     chmod 700 get_helm.sh && \
     ./get_helm.sh
 
+## Install Velero
+
+RUN curl -sL -o velero-v1.8.0-linux-amd64.tar.gz https://github.com/vmware-tanzu/velero/releases/download/v1.8.0/velero-v1.8.0-linux-amd64.tar.gz && \
+  tar -xzf velero-v1.8.0-linux-amd64.tar.gz  && \
+  sudo mv velero-v1.8.0-linux-amd64/velero /usr/local/bin/velero
+
+
 ## Install Kustomize
 RUN curl -s "https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/hack/install_kustomize.sh"  | bash
 
