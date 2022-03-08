@@ -8,6 +8,10 @@ RUN sudo apt update
 
 RUN sudo apt install python3-openstackclient python3-novaclient python3-swiftclient -y
 
+## Install awscli
+
+RUN sudo apt install python3-pip -y
+RUN pip3 install awscli awscli-plugin-endpoint
 
 ## Install Kubectl
 RUN curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl" && \
