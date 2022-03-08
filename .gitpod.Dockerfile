@@ -1,6 +1,14 @@
 ARG GITPOD_IMAGE=gitpod/workspace-base:latest
 FROM ${GITPOD_IMAGE}
 
+## Update the packet cache
+RUN sudo apt update
+
+## Install openstack, nova and swift clients
+
+RUN sudo apt install python3-openstackclient python3-novaclient python3-swiftclient -y
+
+
 ## Install Kubectl
 RUN curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl" && \
     chmod +x ./kubectl && \

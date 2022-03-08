@@ -1,6 +1,6 @@
-# Gitpod GitPod Workspace for Openstack and Kubernetes
+# Gitpod GitPod Workspace for OVHcloud Openstack and Kubernetes
 
-A working Gitpod setup for managing Kubernetes clusters. The workspace includes:
+A working Gitpod setup to work with OVHcloud Openstack and Managed Kubernetes. The workspace includes:
 
 - For Openstack: Openstack, Nova and Swift clients
 
@@ -9,6 +9,11 @@ A working Gitpod setup for managing Kubernetes clusters. The workspace includes:
 To open the workspace, simply click on the *Open in Gitpod* button, or use [this link](https://gitpod.io/#https://github.com/LostInBrittany/k8s-and-openstack-gitpod.git).
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/LostInBrittany/k8s-and-openstack-gitpod.git)
+
+
+## Configuring Openstack
+
+
 
 ## Configuring Kubeconfig
 
