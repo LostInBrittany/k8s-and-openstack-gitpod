@@ -15,7 +15,7 @@ To open the workspace, simply click on the *Open in Gitpod* button, or use [this
 
 To configure openstack, you need to setup Openstack authentication variables. There are two ways to do it:
 
-- Copying the content of your `&lt;<user_name>-openrc.sh` file into a `openrc.sh` file in your workspace and source it: 
+- Copying the content of your `<user_name>-openrc.sh` file into a `openrc.sh` file in your workspace and source it: 
 
     ```bash
     source ./openrc.sh
