@@ -4,16 +4,14 @@ FROM ${GITPOD_IMAGE}
 ## Update the packet cache
 RUN sudo apt update
 
-## Install openstack, nova and swift clients
-
-RUN sudo apt install python3-openstackclient python3-novaclient python3-cinderclient \ 
-python3-neutronclient python3-swiftclient python3-glanceclient python3-octaviaclient \
-python3-mistralclient python3-barbicanclient python3-ironicclient -y
-
-## Install awscli
+## Install awscli openstack projects clients using python3-pip
 
 RUN sudo apt install python3-pip -y
-RUN pip3 install awscli awscli-plugin-endpoint
+RUN pip3 install --upgrade pip
+RUN pip3 install python-openstackclient python-novaclient python-cinderclient \
+python-neutronclient python-swiftclient python-glanceclient python-octaviaclient \
+python-mistralclient python-barbicanclient python-ironicclient \
+awscli awscli-plugin-endpoint
 
 ## Install Kubectl
 RUN curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl" && \
