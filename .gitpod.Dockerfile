@@ -10,7 +10,7 @@ RUN sudo apt install python3-pip -y
 RUN pip3 install --upgrade pip
 RUN pip3 install python-openstackclient python-novaclient python-cinderclient \
 python-neutronclient python-swiftclient python-glanceclient python-octaviaclient \
-python3-mistralclient python3-barbicanclient python3-ironicclient \
+python-mistralclient python-barbicanclient python-ironicclient \
 awscli awscli-plugin-endpoint
 
 ## Install Kubectl
