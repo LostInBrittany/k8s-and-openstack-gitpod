@@ -2,7 +2,7 @@
 
 A working Gitpod setup to work with OVHcloud Openstack and Managed Kubernetes. The workspace includes:
 
-- For Openstack: Openstack, Nova and Swift clients
+- For Openstack: Openstack, Nova, Cinder, Neutron, Swift, Glance, Octavia, Mistral, Barbican and ironic clients, awscli
 
 - For Kubernertes: Kubectl, Helm, Verlero & Kustomize.
 
@@ -39,7 +39,7 @@ To configure openstack, you need to setup Openstack authentication variables. Th
     ```
 
     Never add OS_PASSWORD as a Gitpod variable, the workspace will ask you for it after booting up.
-     
+
 
 ## Configuring Kubeconfig
 

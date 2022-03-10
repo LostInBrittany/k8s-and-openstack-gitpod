@@ -6,7 +6,9 @@ RUN sudo apt update
 
 ## Install openstack, nova and swift clients
 
-RUN sudo apt install python3-openstackclient python3-novaclient python3-swiftclient -y
+RUN sudo apt install python3-openstackclient python3-novaclient python3-cinderclient \ 
+python3-neutronclient python3-swiftclient python3-glanceclient python3-octaviaclient \
+python3-mistralclient python3-barbicanclient python3-ironicclient -y
 
 ## Install awscli
 
