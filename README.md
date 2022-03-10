@@ -10,6 +10,11 @@ To open the workspace, simply click on the *Open in Gitpod* button, or use [this
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/LostInBrittany/k8s-and-openstack-gitpod.git)
 
+> If you prefer manually setting up the variables, you can also source the `scripts/setOpenstack.sh` file.
+>
+> ```bash
+> source ./scripts/setOpenstack.sh
+> ```
 
 ## Configuring Openstack
 
