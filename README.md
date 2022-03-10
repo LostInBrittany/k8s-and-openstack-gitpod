@@ -4,7 +4,7 @@ A working Gitpod setup to work with OVHcloud Openstack and Managed Kubernetes. T
 
 - For Openstack: Openstack, Nova, Cinder, Neutron, Swift, Glance, Octavia, Mistral, Barbican and ironic clients, awscli
 
-- For Kubernertes: Kubectl, Helm, Verlero & Kustomize.
+- For Kubernetes: Kubectl, Helm, Velero & Kustomize.
 
 To open the workspace, simply click on the *Open in Gitpod* button, or use [this link](https://gitpod.io/#https://github.com/LostInBrittany/k8s-and-openstack-gitpod.git).
 
