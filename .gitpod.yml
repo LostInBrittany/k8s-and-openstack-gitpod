@@ -2,6 +2,8 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
+  - name: Set permissions
+    command: chmod +x /workspace/k8s-and-openstack-gitpod/scripts/setOpenstack.sh
   - name: Set Kubeconfig
     command: echo $K8S_CTX | base64 -d > ~/.kube/config
   - name: Ask for OS_PASSWORD
