@@ -13,6 +13,9 @@ python-neutronclient python-swiftclient python-glanceclient python-octaviaclient
 python-mistralclient python-barbicanclient python-ironicclient \
 awscli awscli-plugin-endpoint
 
+ENV PATH="~/.local/bin/:${PATH}"
+
+
 ## Install Kubectl
 RUN curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl" && \
     chmod +x ./kubectl && \
